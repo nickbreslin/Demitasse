@@ -5,6 +5,12 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AddCupModal } from '../pages/add-cup/add-cup';
+
+
+import { Storage } from '@ionic/storage';
+import { Data } from '../providers/data';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +18,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddCupModal
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,8 +30,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    AddCupModal
   ],
-  providers: []
+  providers: [Storage, Data]
 })
 export class AppModule {}
