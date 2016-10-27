@@ -14,4 +14,160 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+
+
+<ion-item>
+  <ion-label>Start Time</ion-label>
+  <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+</ion-item>
+
+  <!-- standard -->
+  <p>
+  <button ion-button color="primary">Primary</button>
+  <button ion-button color="light">Light</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="dark">Dark</button>
+
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="favorite">Favorite</button>
+  </p>
+
+  <!-- outline -->
+  <p>
+  <button ion-button outline color="primary">Primary</button>
+  <button ion-button outline color="light">Light</button>
+  <button ion-button outline color="secondary">Secondary</button>
+  <button ion-button outline color="dark">Dark</button>
+
+  <button ion-button outline color="danger">Danger</button>
+  <button ion-button outline color="favorite">Favorite</button>
+  </p>
+
+  <!-- clear -->
+  <p>
+  <button ion-button clear color="primary">Primary</button>
+  <button ion-button clear color="light">Light</button>
+  <button ion-button clear color="secondary">Secondary</button>
+  <button ion-button clear color="dark">Dark</button>
+
+  <button ion-button clear color="danger">Danger</button>
+  <button ion-button clear color="favorite">Favorite</button>
+  </p>
+
+  <!-- round -->
+  <p>
+  <button ion-button round color="primary">Primary</button>
+  <button ion-button round color="light">Light</button>
+  <button ion-button round color="secondary">Secondary</button>
+  <button ion-button round color="dark">Dark</button>
+
+  <button ion-button round color="danger">Danger</button>
+  <button ion-button round color="favorite">Favorite</button>
+  </p>
+
+  <!-- block -->
+  <p>
+  <button ion-button block color="primary">Primary</button>
+  </p>
+
+  <!-- full -->
+  <p>
+  <button ion-button full color="primary">Primary</button>
+  </p>
+
+  <!-- sizes -->
+  <p>
+  <button ion-button small color="primary">Primary</button>
+  <button ion-button color="primary">Primary</button>
+  <button ion-button large color="primary">Primary</button>
+  </p>
+
+
+<!-- ICONS IN BUTTONS -->
+<p>
+  <!-- Float the icon left -->
+  <button ion-button icon-left>
+    <ion-icon name="home"></ion-icon>
+    Left Icon
+  </button>
+
+  <!-- Float the icon right -->
+  <button ion-button icon-right>
+    Right Icon
+    <ion-icon name="home"></ion-icon>
+  </button>
+
+  <!-- Only icon (no text) -->
+  <button ion-button icon-only>
+    <ion-icon name="home"></ion-icon>
+  </button>
+</p>
+
+
+<!-- CARD -->
+<ion-card>
+
+  <ion-card-header>
+    Card Header
+  </ion-card-header>
+
+  <ion-card-content>
+    <!-- Add card content here! -->
+    this is sample content.
+  </ion-card-content>
+
+</ion-card>
+
+
+<!-- LIST ON CARD -->
+<ion-card>
+  <ion-card-header>
+    Explore Nearby
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-left></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-left></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-left></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-left></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-left></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-left></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <img src="assets/img/coffee_background.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Coffee
+      </ion-card-title>
+    <p>
+      Delicious fresh brew coffee.
+    </p>
+  </ion-card-content>
+</ion-card>
 </ion-content>
