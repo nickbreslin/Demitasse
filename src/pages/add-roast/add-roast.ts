@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 
 /*
   Generated class for the AddRoast page.
@@ -11,12 +11,21 @@ import { NavController } from 'ionic-angular';
   selector: 'page-add-roast',
   templateUrl: 'add-roast.html'
 })
-export class AddRoast {
-
-  constructor(public navCtrl: NavController) {}
-
-  ionViewDidLoad() {
-    console.log('Hello AddRoast Page');
+export class AddRoastModal {
+ 
+  constructor(public navCtrl: NavController,
+  	public view: ViewController) {
+ 
   }
-
+ 
+  saveItem(){
+  
+    this.view.dismiss();
+ 
+  }
+ 
+  close(){
+    this.view.dismiss();
+  }
+ 
 }

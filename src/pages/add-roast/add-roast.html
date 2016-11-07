@@ -1,18 +1,40 @@
-<!--
-  Generated template for the AddRoast page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>add-roast</ion-title>
-  </ion-navbar>
-
+  <ion-toolbar color="dark">
+    <ion-title>
+        Add Roast
+    </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
-
-
-<ion-content padding>
-
+ 
+<ion-content>
+    <ion-list>
+ 
+      <ion-item>
+        <ion-label floating>Roast Name</ion-label>
+        <ion-input type="text" [(ngModel)]="title"></ion-input>
+      </ion-item>
+      <ion-list>
+	  <ion-item>
+	    <ion-label>Color Category</ion-label>
+	    <ion-select [(ngModel)]="toppings" cancelText="Nah" okText="Okay!">
+	      <ion-option value="light" checked="true">Light</ion-option>
+	      <ion-option value="medium">Medium</ion-option>
+	      <ion-option value="medium-dark">Medium Dark</ion-option>
+	      <ion-option value="dark">Dark</ion-option>
+	    </ion-select>
+	  </ion-item>
+</ion-list>
+ 
+      <ion-item>
+        <ion-label floating>Roaster Name</ion-label>
+        <ion-input type="text" [(ngModel)]="description"></ion-input>
+      </ion-item>
+ 
+    </ion-list>
+ 
+    <button full ion-button color="secondary" (click)="saveItem()">Save</button> 
+ 
 </ion-content>
