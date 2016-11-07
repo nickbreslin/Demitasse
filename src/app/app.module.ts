@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { AddCupModal } from '../pages/add-cup/add-cup';
+import { RoastsPage } from '../pages/roasts/roasts';
 
+import { AddCupModal } from '../pages/add-cup/add-cup';
+import { AddRoastModal } from '../pages/add-roast/add-roast';
 
 import { Storage } from '@ionic/storage';
 import { Data } from '../providers/data';
@@ -15,11 +16,14 @@ import { Data } from '../providers/data';
 @NgModule({
   declarations: [
     MyApp,
+    
     AboutPage,
-    ContactPage,
     HomePage,
     TabsPage,
-    AddCupModal
+    RoastsPage,
+
+    AddCupModal,
+    AddRoastModal
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,11 +31,14 @@ import { Data } from '../providers/data';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    
     AboutPage,
-    ContactPage,
+    RoastsPage,
     HomePage,
     TabsPage,
-    AddCupModal
+
+    AddCupModal,
+    AddRoastModal
   ],
   providers: [Storage, Data]
 })
