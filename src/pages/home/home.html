@@ -1,114 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color='secondary'>
+    <ion-title >My Cup</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
+<ion-card>
+  <img src="assets/img/coffee_background.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Welcome to Demitasse
+      </ion-card-title>
+    <p>
+      Coffee and chill, yo.
+    </p>
+  </ion-card-content>
+</ion-card> 
+
   <button ion-button block (click)="addItem()">
-    Add Cup
+    Add a cup
   </button>
-
-<h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-
+  <!--
   <button ion-button block (click)="presentActionSheet()">
     Show Action Sheet
-  </button> 
+  </button> -->
 
 
-  <ion-list>
-    <ion-item *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
-  </ion-list>
-<ion-list>
-  <ion-list-header>
-    Action
-  </ion-list-header>
-  <ion-item>Terminator II</ion-item>
-  <ion-item>The Empire Strikes Back</ion-item>
-  <ion-item>Blade Runner</ion-item>
-</ion-list>
-
-<ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list>
-
-<ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list><ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list><ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list><ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list><ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list><ion-list>
-  <ion-list-header>
-    Action
-    </ion-list-header>
-
-  <ion-item-group>
-    <ion-item-divider color="light">A</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-  </ion-item-group>
-</ion-list>
 
 </ion-content>
