@@ -7,11 +7,90 @@
 </ion-header>
 
 <ion-content>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
+    <ion-item *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
   </ion-list>
+<ion-list>
+  <ion-list-header>
+    Action
+  </ion-list-header>
+  <ion-item>Terminator II</ion-item>
+  <ion-item>The Empire Strikes Back</ion-item>
+  <ion-item>Blade Runner</ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list>
+
+<ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list><ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list><ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list><ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list><ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list><ion-list>
+  <ion-list-header>
+    Action
+    </ion-list-header>
+
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+</ion-list>
 </ion-content>
