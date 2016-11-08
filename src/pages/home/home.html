@@ -9,8 +9,29 @@
 
 <ion-content padding>
 
-  <button ion-button block color='cta' (click)="addItem()">
+<ion-card *ngIf="activeCup == true">
+        <ion-card-header>
+            Information
+        </ion-card-header>
+        <ion-card-content>
+            <p>
+                This is an example of what your application could look
+                like with Ionic 2.  If you choose to
+                <strong>dismiss</strong> this notification, it will
+                not be shown again for this session.  No data
+                is persisted in this application.
+            </p>
+        </ion-card-content>
+        <button ion-button block (click)="presentActionSheet()">
+	     Show Action Sheet
+	   </button> 
+    </ion-card>
+
+
+  <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
     Add a cup
   </button>
+
+   
 
 </ion-content>

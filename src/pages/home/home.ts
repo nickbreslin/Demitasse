@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ModalController, NavController } from 'ionic-angular';
+import { ModalController, NavController, ToastController } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular'
 
 import { AddCupModal } from '../add-cup/add-cup';
@@ -14,12 +14,15 @@ import { Data } from '../../providers/data';
 })
 export class HomePage {
 
+  public activeCup = false;
+
   
   constructor(
   	public navCtrl: NavController,
   	public actionSheetCtrl: ActionSheetController,
   	public dataService: Data,
-  	public modalCtrl: ModalController
+  	public modalCtrl: ModalController,
+    public toastCtrl: ToastController
   ) {
 
   	this.saveItem('a');
@@ -47,6 +50,8 @@ export class HomePage {
  
           if(item){
             this.saveItem(item);
+
+            this.activeCup = true;
           }
  
     });
@@ -81,6 +86,13 @@ export class HomePage {
 	         text: 'Archive',
 	         handler: () => {
 	           console.log('Archive clicked');
+             this.activeCup = false;
+             let toast = this.toastCtrl.create({
+              message: 'Archived',
+              duration: 1500,
+              position: 'top'
+            });
+            toast.present();
 	         }
 	       },
 	       {
@@ -88,6 +100,7 @@ export class HomePage {
 	         role: 'cancel',
 	         handler: () => {
 	           console.log('Cancel clicked');
+             this.activeCup = false;
 	         }
 	       }
 	     ]
