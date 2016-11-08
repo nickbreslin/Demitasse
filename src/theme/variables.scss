@@ -23,20 +23,22 @@ $background-color:  #fff;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  //primary:    #387ef5,
-  //secondary:  #32db64,
+  primary:    #387ef5,
+  secondary:  #32db64,
   danger:     #f53d3d,
-  //light:      #f4f4f4,
-  //dark:       #222,
+  light:      #f4f4f4,
+  dark:       #222,
   favorite:   #69BB7B,
 
   
-  primary:    #6C741E, // green
-  secondary:  #7C5E3B, // brown
-  light:      #BCC08D, // lightgreen
-  dark:       #53402B, // dark green
+  //primary:    #9a5327, // brown
+  //secondary:  #173742, // #173742
+  //cta: #387ef5,
+  //light:      #cc8d4a, // light brown
+  //dark:       #4e1703, // dark red/brown
+  //secondarydark: #0f1720,
 
-  neutral:    #EEECE0  // offwhite
+  //neutral:    #EEECE0  // offwhite
 );
 
 // App iOS Variables
