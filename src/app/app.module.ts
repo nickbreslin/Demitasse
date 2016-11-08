@@ -20,6 +20,10 @@ import { Storage } from '@ionic/storage';
 import { Data    } from '../providers/data';
 
 
+// Models
+import { CupModel } from '../models/cup';
+
+
 @NgModule({
   declarations: [
     MyApp,

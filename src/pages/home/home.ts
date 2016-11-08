@@ -7,6 +7,8 @@ import { AddCupModal } from '../add-cup/add-cup';
 
 import { Data } from '../../providers/data';
 
+import { CupModel } from '../../models/cup';
+
 
 @Component({
   selector: 'page-home',
@@ -15,6 +17,7 @@ import { Data } from '../../providers/data';
 export class HomePage {
 
   public activeCup = false;
+  public cup = new CupModel();
 
   
   constructor(
