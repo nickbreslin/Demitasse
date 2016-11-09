@@ -18,7 +18,7 @@ export class CupModel {
 	private rating;
 
 	constructor() {
-		console.log('created');
+		console.log('created cup');
 		//this.created = 
 	}
 

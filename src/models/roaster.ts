@@ -15,7 +15,7 @@ export class RoasterModel {
 	*/
 
 	constructor() {
-		console.log('created');
+		console.log('created roaster');
 	}
 
 	// Write / Save

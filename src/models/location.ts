@@ -15,7 +15,7 @@ export class LocationModel {
 	*/
 
 	constructor() {
-		console.log('created');
+		console.log('created location');
 	}
 
 	// Write / Save
