@@ -1,25 +1,15 @@
 export class CupModel {
 	
 	// Properties
-	/*
-		size (oz)
-		size (category)
-		
-		roast
 
-		created
-
-		start
-		finished
-
-		rating
-	*/
-
-	private rating;
-
-	private createdTime;
+	public createdTime;
 	public startTime;
-	private endTime;
+	public endTime;
+
+	public size;
+	public roast;
+	public rating;
+
 
 	constructor() {
 		console.log('created cup');
@@ -34,12 +24,4 @@ export class CupModel {
 	setRating(rating) {
 		this.rating = rating;
 	}
-
-
-
-	// Write / Save
-
-
-	// Read / Load
-
 }
