@@ -18,6 +18,7 @@ export class HomePage {
 
   public activeCup = false;
   public cup = new CupModel();
+  public festId;
 
   
   constructor(
@@ -47,9 +48,11 @@ export class HomePage {
 
   startTime = 0;
 
-  testFunc(a) {
+  testFunc(a,b) {
     console.log('testfunc');
     console.log(a);
+    console.log(b);
+    console.log(this.festId);
   }
 
   addItem(){
