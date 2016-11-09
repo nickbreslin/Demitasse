@@ -22,6 +22,14 @@
                 is persisted in this application.
             </p>
         </ion-card-content>
+
+        <!-- If Not Started -->
+        <ion-item>
+          <ion-label>Date</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="testFunc"></ion-datetime>
+        </ion-item>
+
+        <!-- If Started but not finished -->
         <button ion-button block (click)="presentActionSheet()">
 	     Show Action Sheet
 	   </button> 

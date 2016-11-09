@@ -45,6 +45,13 @@ export class HomePage {
    console.log('here');
   }
 
+  startTime = 0;
+
+  testFunc(a) {
+    console.log('testfunc');
+    console.log(a);
+  }
+
   addItem(){
  
     let addModal = this.modalCtrl.create(AddCupModal);
