@@ -24,11 +24,7 @@
         </ion-card-content>
 
         <!-- If Not Started -->
-        <ion-item>
-          <ion-label>Date</ion-label>
-          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="festId" (ionChange)="testFunc($event, festId)"></ion-datetime>
-        </ion-item>
-
+        
         <!-- If Started but not finished -->
         <button ion-button block (click)="presentActionSheet()">
 	     Show Action Sheet
@@ -40,6 +36,16 @@
     Add a cup
   </button>
 
-   
+   <ion-item>
+          <ion-label>Start Time</ion-label>
+          <ion-datetime
+            displayFormat="HH:mm A"
+            pickerFormat="HH:mm"
+            [(ngModel)]="festId"
+            (ionChange)="testFunc($event, festId)"
+            disabled = true
+          ></ion-datetime>
+        </ion-item>
+
 
 </ion-content>

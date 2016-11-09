@@ -18,7 +18,7 @@ export class HomePage {
 
   public activeCup = false;
   public cup = new CupModel();
-  public festId;
+  public festId = "10:10";
 
   
   constructor(
@@ -43,7 +43,7 @@ export class HomePage {
   }
 
   ionViewDidLoad(){
-   console.log('here');
+   console.log('Hello Home Page');
   }
 
   startTime = 0;
