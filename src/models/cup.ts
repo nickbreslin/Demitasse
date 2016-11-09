@@ -17,9 +17,18 @@ export class CupModel {
 
 	private rating;
 
+	private createdTime;
+	public startTime;
+	private endTime;
+
 	constructor() {
 		console.log('created cup');
-		//this.created = 
+		this.createdTime = new Date();
+		this.startTime = this.createdTime.getHours() + ":" + this.createdTime.getMinutes()
+	}
+
+	setStartTime(time) {
+		this.startTime = time;
 	}
 
 	setRating(rating) {
