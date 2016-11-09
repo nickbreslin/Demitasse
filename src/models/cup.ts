@@ -14,7 +14,8 @@ export class CupModel {
 	constructor() {
 		console.log('created cup');
 		this.createdTime = new Date();
-		this.startTime = this.createdTime.getHours() + ":" + this.createdTime.getMinutes()
+		this.startTime = new Date().toISOString();//this.createdTime.getHours() + ":" + this.createdTime.getMinutes()+"AM";
+		console.log(this.createdTime);
 	}
 
 	setStartTime(time) {

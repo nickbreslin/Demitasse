@@ -38,7 +38,7 @@ export class HomePage {
       } else {
       	console.log('empty');
       }
- 
+   console.log(this.cup.startTime);
     });
   }
 
