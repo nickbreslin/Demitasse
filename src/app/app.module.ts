@@ -21,7 +21,10 @@ import { Data    } from '../providers/data';
 
 
 // Models
-import { CupModel } from '../models/cup';
+import { CupModel      } from '../models/cup';
+import { RoastModel    } from '../models/roast';
+import { RoasterModel  } from '../models/roaster';
+import { LocationModel } from '../models/location';
 
 
 @NgModule({
@@ -52,7 +55,6 @@ import { CupModel } from '../models/cup';
     MapPage,
     StatsPage,
     
-
     AddCupModal,
     AddRoastModal
   ],
