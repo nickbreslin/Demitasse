@@ -9,7 +9,8 @@
 
 <ion-content padding>
 
-<ion-card *ngIf="activeCup == true">
+    <!-- CONDTIONAL: Card for Active Cup -->
+    <ion-card *ngIf="activeCup == true">
         <ion-card-header>
             Information
         </ion-card-header>
@@ -27,16 +28,12 @@
         
         <!-- If Started but not finished -->
         <button ion-button block (click)="presentActionSheet()">
-	     Show Action Sheet
-	   </button> 
+         Show Action Sheet
+       </button> 
     </ion-card>
 
-
-  <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
-    Add a cup
-  </button>
-
-   <ion-item>
+    <!-- CONDITIONAL: Info for Active Cup -->
+    <ion-item *ngIf="activeCup == true">
           <ion-label>Start Time</ion-label>
           <ion-datetime
             displayFormat="HH:mm A"
@@ -45,7 +42,14 @@
             (ionChange)="testFunc($event, festId)"
             disabled = true
           ></ion-datetime>
-        </ion-item>
+    </ion-item>
+
+    <!-- CONDITIONAL: If no Active Cup -->
+    <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
+        Add a cup
+    </button>
+
+   
 
 
 </ion-content>

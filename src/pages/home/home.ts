@@ -29,7 +29,9 @@ export class HomePage {
     public toastCtrl: ToastController
   ) {
 
-  	this.saveItem('a');
+
+
+  	/*this.saveItem('a');
 
   	this.dataService.getData().then((todos) => {
  
@@ -40,13 +42,12 @@ export class HomePage {
       }
    console.log(this.cup.startTime);
     });
+    */
   }
 
   ionViewDidLoad(){
    console.log('Hello Home Page');
   }
-
-  startTime = 0;
 
   testFunc(a,b) {
     console.log('testfunc');
@@ -62,9 +63,11 @@ export class HomePage {
     addModal.onDidDismiss((item) => {
  
           if(item){
+            console.log('item');
             this.saveItem(item);
-
             this.activeCup = true;
+          } else {
+            console.log('no item');
           }
  
     });

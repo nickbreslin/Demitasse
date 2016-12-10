@@ -1,5 +1,6 @@
 export enum CupStatus {
 
+	Ready    = 0,
 	Created  = 1,
 	Started  = 2,
 	Finished = 3
@@ -26,12 +27,12 @@ export class CupModel {
 
 
 	constructor() {
-		console.log('created cup');
+
 		this.createdTime = new Date();
 		this.startTime = new Date().toISOString();//this.createdTime.getHours() + ":" + this.createdTime.getMinutes()+"AM";
 		console.log(this.createdTime);
 
-		//this.status = CupSize.Tall;
+		this.status = CupStatus.Ready;
 	}
 
 	setStartTime(time) {
