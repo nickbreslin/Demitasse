@@ -21,7 +21,7 @@ export class CupModel {
 	public endTime;
 
 	public size : CupSize;
-	public roast;
+	public roast : RoastModel;
 	public rating;
 	public status : CupStatus;
 
@@ -29,10 +29,9 @@ export class CupModel {
 	constructor() {
 
 		this.createdTime = new Date();
-		this.startTime = new Date().toISOString();//this.createdTime.getHours() + ":" + this.createdTime.getMinutes()+"AM";
-		console.log(this.createdTime);
-
+		this.startTime = new Date().toISOString();
 		this.status = CupStatus.Ready;
+
 	}
 
 	setStartTime(time) {

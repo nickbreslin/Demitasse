@@ -9,31 +9,37 @@
 
 <ion-content padding>
 
-    <!-- CONDTIONAL: Card for Active Cup -->
-    <ion-card *ngIf="activeCup == true">
-        <ion-card-header>
-            Information
-        </ion-card-header>
-        <ion-card-content>
-            <p>
-                This is an example of what your application could look
-                like with Ionic 2.  If you choose to
-                <strong>dismiss</strong> this notification, it will
-                not be shown again for this session.  No data
-                is persisted in this application.
-            </p>
-        </ion-card-content>
+    <!-- CONDITIONAL: If no Active Cup -->
+     <div *ngIf="activeCup == false">
+        <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
+            Add a cup
+        </button>
+    </div>
 
-        <!-- If Not Started -->
-        
-        <!-- If Started but not finished -->
-        <button ion-button block (click)="presentActionSheet()">
-         Show Action Sheet
-       </button> 
-    </ion-card>
 
-    <!-- CONDITIONAL: Info for Active Cup -->
-    <ion-item *ngIf="activeCup == true">
+    <div *ngIf="activeCup == true">
+        <!-- CONDTIONAL: Card for Active Cup -->
+        <ion-card>
+            <ion-card-header>
+                {{cup.status}}
+            </ion-card-header>
+            <ion-card-content>
+                <p>
+                    This is an example of what your application could look
+                    like with Ionic 2.  If you choose to
+                    <strong>dismiss</strong> this notification, it will
+                    not be shown again for this session.  No data
+                    is persisted in this application.
+                </p>
+            </ion-card-content>
+            
+            <!-- CONDITIONAL: If Started but not finished -->
+            <button ion-button block (click)="presentActionSheet()">
+             My Cup
+           </button>
+        </ion-card>
+
+        <ion-item>
           <ion-label>Start Time</ion-label>
           <ion-datetime
             displayFormat="HH:mm A"
@@ -42,14 +48,19 @@
             (ionChange)="testFunc($event, festId)"
             disabled = true
           ></ion-datetime>
-    </ion-item>
+        </ion-item>
 
-    <!-- CONDITIONAL: If no Active Cup -->
-    <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
-        Add a cup
-    </button>
 
-   
+        <ion-label>Rating</ion-label>
+        <ion-item *ngIf="activeCup == true">
+            <ion-range min="0" max="5" step="1" snaps="true" color="secondary" [(ngModel)]="brightness">
+            <ion-icon small range-left name="star-outline"></ion-icon>
+            <ion-icon range-right name="star"></ion-icon>
+            </ion-range>
+         </ion-item>
+
+     </div>
+
 
 
 </ion-content>
