@@ -1,3 +1,5 @@
+import {RoastModel} from 'roast';
+
 export enum CupStatus {
 
 	Ready    = 0,
@@ -21,7 +23,7 @@ export class CupModel {
 	public endTime;
 
 	public size : CupSize;
-	public roast : RoastModel;
+	public roast;
 	public rating;
 	public status : CupStatus;
 
@@ -31,6 +33,7 @@ export class CupModel {
 		this.createdTime = new Date();
 		this.startTime = new Date().toISOString();
 		this.status = CupStatus.Ready;
+		this.roast = new RoastModel();
 
 	}
 

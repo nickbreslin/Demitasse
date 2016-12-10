@@ -10,7 +10,7 @@
 <ion-content padding>
 
     <!-- CONDITIONAL: If no Active Cup -->
-     <div *ngIf="activeCup == false">
+     <div *ngIf="activeCup == false                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ">
         <button *ngIf="activeCup == false" ion-button block color='cta' (click)="addItem()">
             Add a cup
         </button>
@@ -21,7 +21,7 @@
         <!-- CONDTIONAL: Card for Active Cup -->
         <ion-card>
             <ion-card-header>
-                {{cup.status}}
+                {{cup.roast.name}}
             </ion-card-header>
             <ion-card-content>
                 <p>

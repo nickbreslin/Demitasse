@@ -14,6 +14,8 @@ export class RoastModel {
 		rating
 	*/
 
+	public name = "Roasty";
+
 	constructor() {
 		console.log('created roast');
 	}
